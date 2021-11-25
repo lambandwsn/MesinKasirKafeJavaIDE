@@ -1,6 +1,7 @@
 # MesinKasirKafeJavaIDE
 Application create by java netbeant and mysql
 This code is Non Commercial use
+Please use it only for study
 English:
 notes :
 
