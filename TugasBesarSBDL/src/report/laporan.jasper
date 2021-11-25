@@ -1,0 +1,915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style type="text/css">
+    a {text-decoration: none}
+  </style>
+</head>
+<body text="#000000" link="#000000" alink="#000000" vlink="#000000">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td width="50%">&nbsp;</td><td align="center">
+
+<a name="JR_PAGE_ANCHOR_0_1"></a>
+<table class="jrPage" cellpadding="0" cellspacing="0" border="0" style="empty-cells: show; width: 595px; border-collapse: collapse; background-color: white;">
+<tr valign="top" style="height:0">
+<td style="width:20px"></td>
+<td style="width:1px"></td>
+<td style="width:2px"></td>
+<td style="width:10px"></td>
+<td style="width:79px"></td>
+<td style="width:65px"></td>
+<td style="width:27px"></td>
+<td style="width:16px"></td>
+<td style="width:76px"></td>
+<td style="width:31px"></td>
+<td style="width:44px"></td>
+<td style="width:17px"></td>
+<td style="width:15px"></td>
+<td style="width:23px"></td>
+<td style="width:28px"></td>
+<td style="width:17px"></td>
+<td style="width:9px"></td>
+<td style="width:54px"></td>
+<td style="width:37px"></td>
+<td style="width:1px"></td>
+<td style="width:2px"></td>
+<td style="width:1px"></td>
+<td style="width:1px"></td>
+<td style="width:19px"></td>
+</tr>
+<tr valign="top" style="height:20px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:66px">
+<td>
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td colspan="9" style="background-color: #000000; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #FFFFFF; font-size: 50px; line-height: 1.1499023;">Kafe Coklat</span></td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:29px">
+<td>
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td colspan="8" style="background-color: #000000; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #CCCCCC; font-size: 22px; line-height: 1.1499023;">Laporan Penjualan</span></td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:5px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:12px">
+<td>
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:20px">
+<td>
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td colspan="6" style="background-color: #CC0000; text-indent: 0px; text-align: right;">
+<span style="font-family: SansSerif; color: #FFFFFF; font-size: 12px; line-height: 1.2578125;">Friday 04 June 2021</span></td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td style="background-color: #CC0000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:7px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">nomor nota</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">tgl transaksi</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">nama menu</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">jumlah</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">harga</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">total</span></td>
+<td colspan="4">
+</td>
+</tr>
+<tr valign="top" style="height:1px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">040620210001</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-24</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">American Waffle</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">22000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">44000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">180520210002</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-18</span></td>
+<td colspan="2" rowspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">cookies filled with strawberry and apricot jam</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">5</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">145000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td>
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">190520210001</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-19</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">Chicken Fingers</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">7</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">19000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">133000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">190520210002</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-18</span></td>
+<td colspan="2" rowspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">cookies filled with strawberry and apricot jam</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">1</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td>
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">190520210002</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-19</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">Orange Juice</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">1</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">11000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">11000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">190520210003</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-19</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">American Waffle</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">22000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">44000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">190520210004</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-19</span></td>
+<td colspan="2" rowspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">cookies filled with strawberry and apricot jam</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">58000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">200520210001</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-20</span></td>
+<td colspan="2" rowspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">cookies filled with strawberry and apricot jam</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">58000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td>
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">200520210001</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-20</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">Orange Juice</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">11000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">22000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">200520210002</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-20</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">American Waffle</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">3</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">22000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">66000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">230520210001</span></td>
+<td colspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-23</span></td>
+<td colspan="2" rowspan="2" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">cookies filled with strawberry and apricot jam</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">3</span></td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">29000</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">87000</span></td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:18px">
+<td>
+</td>
+<td colspan="4" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">240520210001</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2021-05-24</span></td>
+<td colspan="2" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 11px; line-height: 1.1499023;">American Waffle</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">2</span></td>
+<td colspan="5" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">22000</span></td>
+<td colspan="3" style="background-color: #F0EFEF; text-indent: 0px; text-align: left;">
+<span style="font-family: Times New Roman; color: #000000; font-size: 14px; line-height: 1.1499023;">44000</span></td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td style="background-color: #F0EFEF; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:274px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:1px">
+<td>
+</td>
+<td colspan="21" style="border-top: 1px solid #999999; ">
+</td>
+<td colspan="2">
+</td>
+</tr>
+<tr valign="top" style="height:14px">
+<td colspan="24">
+</td>
+</tr>
+<tr valign="top" style="height:20px">
+<td colspan="11">
+</td>
+<td colspan="5" style="text-indent: 0px; text-align: left;">
+<span style="font-family: SansSerif; color: #000000; font-size: 10px; line-height: 1.2578125;">Total Penjualan</span></td>
+<td colspan="3" style="text-indent: 0px; text-align: right;">
+<span style="font-family: SansSerif; color: #000000; font-size: 10px; line-height: 1.2578125;">RP 741000.00</span></td>
+<td colspan="5">
+</td>
+</tr>
+<tr valign="top" style="height:1px">
+<td colspan="2">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td colspan="3" rowspan="2" style="background-color: #000000; text-indent: 0px;  vertical-align: middle;text-align: right;">
+<span style="font-family: Times New Roman; color: #FFFFFF; font-size: 10px; line-height: 1.1499023;">Page 1 of</span></td>
+<td colspan="3" rowspan="2" style="background-color: #000000; text-indent: 0px;  vertical-align: middle;text-align: left;">
+<span style="font-family: Times New Roman; color: #FFFFFF; font-size: 10px; line-height: 1.1499023;">&nbsp;1</span></td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:19px">
+<td colspan="2">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td colspan="5" rowspan="2" style="background-color: #000000; text-indent: 0px;  vertical-align: middle;text-align: left;">
+<span style="font-family: Times New Roman; color: #FFFFFF; font-size: 10px; line-height: 1.1499023;">Friday 04 June 2021</span></td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:1px">
+<td colspan="2">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:3px">
+<td colspan="2">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td style="background-color: #000000; ">
+</td>
+<td>
+</td>
+</tr>
+<tr valign="top" style="height:20px">
+<td colspan="24">
+</td>
+</tr>
+</table>
+
+<![if IE]>
+<script>
+var links = document.querySelectorAll('link.jrWebFont');
+setTimeout(function(){ if (links) { for (var i = 0; i < links.length; i++) { links.item(i).href = links.item(i).href; } } }, 0);
+</script>
+<![endif]>
+</td><td width="50%">&nbsp;</td></tr>
+</table>
+</body>
+</html>

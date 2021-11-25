@@ -1,0 +1,476 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gui;
+
+import Service.Koneksi;
+import com.mysql.jdbc.CallableStatement;
+import com.mysql.jdbc.PreparedStatement;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.io.File;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
+import java.sql.Types;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Lambang
+ */
+@SuppressWarnings("unchecked")
+public class DeleteHistory extends javax.swing.JFrame {
+    /**
+     * Creates new form DataLaporan
+     */
+    ArrayList<String> id = new ArrayList();
+    ArrayList<Integer> id_table = new ArrayList();
+    ArrayList<String> menu = new ArrayList();
+    public DeleteHistory() {
+        initComponents();
+        item_menu();
+        load_table();
+        theme();
+        btnHapus.setVisible(false);
+        this.setLocationRelativeTo(null);
+    }
+    private void item_menu(){
+        Connection conn;
+        Koneksi koneksi = new Koneksi();
+        conn = koneksi.getConnection();
+        try {
+            Statement s = conn.createStatement();
+            ResultSet res = s.executeQuery("SELECT id, nama_menu FROM tbl_produk ORDER BY nama_menu ASC");
+            this.id.clear();
+            this.menu.clear();
+            while (res.next()) {
+                this.id.add(res.getInt("id")+"");
+                this.menu.add(res.getString("nama_menu"));
+            }
+            s.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+     private void load_table(){
+        setTabelModel();
+        DefaultTableModel model = (DefaultTableModel) table_deletehistory.getModel();
+        Connection conn;
+        Koneksi koneksi = new Koneksi();
+        conn = koneksi.getConnection();
+        try {
+            Statement s = conn.createStatement();
+            ResultSet res = s.executeQuery("SELECT * FROM tabel_history");
+            this.id_table.clear();
+            while (res.next()) {              
+                Object[] data = new Object[6];
+                this.id_table.add(res.getInt("id_menu"));
+                data[0] = res.getString("nomer_nota"); 
+                data[1] = res.getString("tgl_transaksi");
+                data[2] = res.getString("nama_menu");
+                data[3] = res.getInt("jumlah");
+                data[4] = res.getString("harga");
+                data[5] = res.getString("total");
+                model.addRow(data);
+            }
+            table_deletehistory.setModel(model);
+            s.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+private void setTabelModel(){
+        //setting kolom tabel
+        DefaultTableModel model = new DefaultTableModel(){
+        public boolean isCellEditable(int rowIndex, int mColIndex){
+        return false;
+        }
+        };
+        model.addColumn("Nomer Nota");
+        model.addColumn("Tanggal Transaksi");
+        model.addColumn("Nama Menu");
+        model.addColumn("Jumlah");
+        model.addColumn("Harga");
+        model.addColumn("Total");
+        table_deletehistory.setModel(model);
+        
+        TableColumnModel columnModel = table_deletehistory.getColumnModel();
+        columnModel.getColumn(2).setWidth(250);
+        columnModel.getColumn(2).setPreferredWidth(250);
+        table_deletehistory.setColumnModel(columnModel);
+        table_deletehistory.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+    }
+    private void theme(){
+        try {
+            Toolkit toolkit=Toolkit.getDefaultToolkit();
+            String path=new File(".").getCanonicalPath();
+            JLabel background =new JLabel("",
+                    new ImageIcon(
+                            toolkit.getImage(path+"/asset/background.png").getScaledInstance(1245, 655, Image.SCALE_DEFAULT)),JLabel.CENTER
+            );
+            background.setBounds(0, 0, 1245, 655);
+            this.add(background);
+        } catch (IOException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    /**
+     * This method is called from within the constructor to initialize the form. WARNING: Do NOT modify this code. The content of this method is always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        txtjumlah = new javax.swing.JTextField();
+        txtnota = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        btnHapus = new javax.swing.JButton();
+        btnKasir = new javax.swing.JButton();
+        btnRestore = new javax.swing.JButton();
+        txtmenu = new javax.swing.JTextField();
+        txttgl = new javax.swing.JTextField();
+        btndelall = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        table_deletehistory = new javax.swing.JTable();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setMaximumSize(new java.awt.Dimension(811, 148));
+        jPanel1.setMinimumSize(new java.awt.Dimension(811, 148));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txtjumlah.setEditable(false);
+        txtjumlah.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtjumlahKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txtjumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 66, 198, -1));
+
+        txtnota.setEditable(false);
+        txtnota.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnotaKeyTyped(evt);
+            }
+        });
+        jPanel1.add(txtnota, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 12, 198, -1));
+
+        jLabel1.setText("Nomer Nota            :");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 11, 110, -1));
+
+        jLabel2.setText("Menu                       :");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 34, -1, -1));
+
+        jLabel3.setText("Jumlah                    :");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 66, -1, -1));
+
+        jLabel4.setText("Tanggal Transaksi :");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 101, -1, -1));
+
+        btnHapus.setText("Hapus");
+        btnHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHapusActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnHapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(552, 11, -1, -1));
+
+        btnKasir.setText("Kembali ke Data Laporan");
+        btnKasir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKasirActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnKasir, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        btnRestore.setText("Restore");
+        btnRestore.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestoreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRestore, new org.netbeans.lib.awtextra.AbsoluteConstraints(621, 11, -1, -1));
+
+        txtmenu.setEditable(false);
+        jPanel1.add(txtmenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 40, 198, -1));
+
+        txttgl.setEditable(false);
+        jPanel1.add(txttgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 98, 198, -1));
+
+        btndelall.setText("Hapus Semua Data");
+        btndelall.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndelallActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btndelall, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 11, -1, -1));
+
+        table_deletehistory.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        table_deletehistory.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                table_deletehistoryMouseClicked(evt);
+            }
+        });
+        jScrollPane1.setViewportView(table_deletehistory);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    
+    private void table_deletehistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_table_deletehistoryMouseClicked
+        // TODO add your handling code here:
+        btnHapus.setVisible(true);
+        int row = table_deletehistory.getSelectedRow();
+        if(!(row+"").equals("") && !(row+"").equals("-1")){
+                txtnota.setText(table_deletehistory.getValueAt(row, 0).toString());
+                txttgl.setText(table_deletehistory.getValueAt(row, 1).toString());
+                txtmenu.setText(menu.get(row));
+                txtjumlah.setText(table_deletehistory.getValueAt(row, 3).toString());
+        }
+    }//GEN-LAST:event_table_deletehistoryMouseClicked
+
+    
+    private void txtjumlahKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtjumlahKeyTyped
+        // TODO add your handling code here:
+        int key = evt.getKeyChar();
+        if(!(key>=48 && key<=57)){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtjumlahKeyTyped
+
+    private void btnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHapusActionPerformed
+        // TODO add your handling code here:
+        int row = table_deletehistory.getSelectedRow();
+        if(row == -1){
+        JOptionPane.showMessageDialog(null, "Pilih Data yang Ingin Anda Hapus!", "Kesalahan!", JOptionPane.ERROR_MESSAGE);
+        }else{
+        int yes_no = JOptionPane.showConfirmDialog(this, "Anda yakin ingin menghapus?","Hapus",JOptionPane.YES_NO_OPTION);
+        if(yes_no == JOptionPane.YES_OPTION){
+        Connection conn = new Koneksi().getConnection();
+        try{
+          String query = "DELETE FROM delete_history WHERE nomer_nota=? AND id_menu=?";
+          java.sql.PreparedStatement ps = conn.prepareStatement(query);
+          int idtable = Integer.parseInt(this.id_table.get(row).toString());
+          ps.setString(1, table_deletehistory.getValueAt(row, 0).toString());
+          ps.setInt(2, idtable);
+          ps.execute();
+          ps.close();
+        btnHapus.setVisible(false);
+        txtnota.setText("");
+        txtmenu.setText("");
+        txtjumlah.setText("");
+        txttgl.setText("");
+        load_table();
+        }catch (SQLException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
+        }
+    }//GEN-LAST:event_btnHapusActionPerformed
+
+    private void btnKasirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKasirActionPerformed
+        // TODO add your handling code here:
+        Datalaporan form = new Datalaporan();
+        form.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnKasirActionPerformed
+
+    private void txtnotaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnotaKeyTyped
+        // TODO add your handling code here:
+        int key = evt.getKeyChar();
+        if(!(key>=48 && key<=57)){
+            evt.consume();
+        }else if(txtnota.getText().length()>=12){
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtnotaKeyTyped
+
+    
+    private void btnRestoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestoreActionPerformed
+        // TODO add your handling code here:
+        Connection conn;
+        Koneksi koneksi = new Koneksi();
+        conn = koneksi.getConnection();
+        boolean data_ada=false;
+        int row = table_deletehistory.getSelectedRow();
+        if(row == -1){
+        JOptionPane.showMessageDialog(null, "Pilih Data yang Ingin Anda Restore", "Kesalahan!", JOptionPane.ERROR_MESSAGE);
+        }else{
+        int yes_no = JOptionPane.showConfirmDialog(this, "Anda yakin ingin melakukan restore data?","Restore",JOptionPane.YES_NO_OPTION);
+        if(yes_no == JOptionPane.YES_OPTION){
+        
+        try {
+            CallableStatement s = (CallableStatement) conn.prepareCall("{call inserttrans(?,?,?,?)}");
+            s.setString(1, txtnota.getText());
+            s.setInt(2, Integer.parseInt(this.id.get(row)));
+            s.setInt(3, Integer.parseInt(txtjumlah.getText()));
+            s.setString(4,txttgl.getText());
+            s.execute();
+        } catch (SQLException ex) {
+            if(ex.getErrorCode()==1062){
+            JOptionPane.showMessageDialog(null, "Nomor nota dan item sudah ada!");
+            data_ada=true;
+            }
+        }
+        if(!data_ada){
+        try{
+          String query = "DELETE FROM delete_history WHERE nomer_nota=? AND id_menu=?";
+          java.sql.PreparedStatement ps = conn.prepareStatement(query);
+          int idtable = Integer.parseInt(this.id_table.get(row).toString());
+          ps.setString(1, table_deletehistory.getValueAt(row, 0).toString());
+          ps.setInt(2, idtable);
+          ps.execute();
+          ps.close();
+        btnHapus.setVisible(false);
+        txtnota.setText("");
+        txtmenu.setText("");
+        txtjumlah.setText("");
+        txttgl.setText("");
+        load_table();
+        }catch (SQLException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
+        }
+        }
+    }//GEN-LAST:event_btnRestoreActionPerformed
+
+    private void btndelallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndelallActionPerformed
+        // TODO add your handling code here:
+        int yes_no = JOptionPane.showConfirmDialog(this, "Anda yakin ingin menghapus Semua?","Hapus Semua",JOptionPane.YES_NO_OPTION);
+        if(yes_no == JOptionPane.YES_OPTION){
+        Connection conn = new Koneksi().getConnection();
+        try{
+          for(int row=0;row<table_deletehistory.getRowCount();row++){
+          String query = "DELETE FROM delete_history WHERE nomer_nota=? AND id_menu=?";
+          java.sql.PreparedStatement ps = conn.prepareStatement(query);
+          int idtable = Integer.parseInt(this.id_table.get(row).toString());
+          ps.setString(1, table_deletehistory.getValueAt(row, 0).toString());
+          ps.setInt(2, idtable);
+          ps.execute();
+          ps.close();
+        }
+        btnHapus.setVisible(false);
+        txtnota.setText("");
+        txtmenu.setText("");
+        txtjumlah.setText("");
+        txttgl.setText("");
+        load_table();
+        }catch (SQLException ex) {
+            Logger.getLogger(DataMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        }
+    }//GEN-LAST:event_btndelallActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(DeleteHistory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(DeleteHistory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(DeleteHistory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(DeleteHistory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new DeleteHistory().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnHapus;
+    private javax.swing.JButton btnKasir;
+    private javax.swing.JButton btnRestore;
+    private javax.swing.JButton btndelall;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable table_deletehistory;
+    private javax.swing.JTextField txtjumlah;
+    private javax.swing.JTextField txtmenu;
+    private javax.swing.JTextField txtnota;
+    private javax.swing.JTextField txttgl;
+    // End of variables declaration//GEN-END:variables
+}
