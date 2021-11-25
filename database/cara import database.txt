@@ -1,0 +1,5 @@
+Buka phpmyadmin
+buat database "db_sbdl"
+pilih datbase
+pilih import
+choose file

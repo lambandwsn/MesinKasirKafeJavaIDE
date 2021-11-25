@@ -1,0 +1,4 @@
+cara buka di sqlyog
+buka sqlyog
+pilih file
+pilih open
